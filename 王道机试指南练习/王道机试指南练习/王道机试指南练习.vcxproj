@@ -139,11 +139,27 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="习题2.1.cpp" />
+    <ClCompile Include="习题2.10.cpp" />
+    <ClCompile Include="习题2.11.cpp" />
     <ClCompile Include="习题2.2.cpp" />
     <ClCompile Include="习题2.3.cpp" />
+    <ClCompile Include="习题2.4.cpp" />
+    <ClCompile Include="习题2.5.cpp" />
+    <ClCompile Include="习题2.6.cpp" />
+    <ClCompile Include="习题2.7.cpp" />
+    <ClCompile Include="习题2.8.cpp" />
+    <ClCompile Include="习题2.9.cpp" />
     <ClCompile Include="例题2.1.cpp" />
+    <ClCompile Include="例题2.10.cpp" />
+    <ClCompile Include="例题2.11.cpp" />
     <ClCompile Include="例题2.2.cpp" />
     <ClCompile Include="例题2.3.cpp" />
+    <ClCompile Include="例题2.4.cpp" />
+    <ClCompile Include="例题2.5.cpp" />
+    <ClCompile Include="例题2.6.cpp" />
+    <ClCompile Include="例题2.7.cpp" />
+    <ClCompile Include="例题2.8.cpp" />
+    <ClCompile Include="例题2.9.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
