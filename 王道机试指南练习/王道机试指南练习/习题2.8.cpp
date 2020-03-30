@@ -15,28 +15,28 @@
 //	int month;
 //	int	day;
 //public:
-//	date(){}
-//	date(int y, int m, int d) :year(y), month(m), day(d){}
-//	friend ostream& operator<<(ostream& output, date& d);
+//	date(){}//无参构造
+//	date(int y, int m, int d) :year(y), month(m), day(d){}//参数初始化表
+//	friend ostream& operator<<(ostream& output, date& d);//重载<<运算符
 //};
 //
 //
 //ostream& operator<<(ostream& output, date& d)
 //{
-//	if (d.day==Month[d.month-1])
+//	if (d.day==Month[d.month-1])//在当月最后一天
 //	{
-//		if (d.month==12)
+//		if (d.month==12)//当月是十二月，后一天为下一年
 //		{
 //			output << d.year + 1 << "-" << setw(2) << setfill('0') << 1 
 //				<< "-" << setw(2) << setfill('0') << 1 << endl;
 //		}
-//		else
+//		else//当月不是十二月，后一天在下个月
 //		{
 //			output << d.year << "-" << setw(2) << setfill('0') 
 //				<< d.month + 1 << "-" << setw(2) << setfill('0') <<1 << endl;
 //		}
 //	}
-//	else
+//	else//不在当月最后一天，后一天肯定在本月里
 //	{
 //		output << d.year << "-" << setw(2) << setfill('0')
 //			<< d.month << "-" << setw(2) << setfill('0') << d.day+1 << endl;

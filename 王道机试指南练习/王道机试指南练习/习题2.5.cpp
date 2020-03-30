@@ -17,7 +17,7 @@
 //		for (int i = 4; i < str0.length()+2; i+=2)
 //		{
 //			sub = str0.length() + 2 - i - (i / 2);
-//			if ( sub >= 0 && sub <= min )
+//			if ( sub >= 0 && sub <= min )//两个边差值最接近时
 //			{
 //				min = sub;
 //				n1 = i / 2;

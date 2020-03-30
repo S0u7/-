@@ -2,7 +2,7 @@
 //using namespace std;
 //#include<set>
 //#include<algorithm>
-//#include<iterator>
+//#include<iterator>//迭代器相关头文件
 ///*
 //剩下的树
 //*/
@@ -30,9 +30,9 @@
 //			}
 //			
 //			set_difference(s.begin(), s.end(), p.begin(), p.end(),
-//				inserter(temp, temp.begin()));
-//			p.clear();
-//			s.swap(temp);
+//				inserter(temp, temp.begin()));//集合求差集
+//			p.clear();//被差集合清空
+//			s.swap(temp);//设为求差集后的集合
 //			temp.clear();
 //		}
 //

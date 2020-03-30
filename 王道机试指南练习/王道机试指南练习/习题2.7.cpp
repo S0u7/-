@@ -48,6 +48,7 @@
 //	time_t time;
 //	while (cin>>date)
 //	{
+//		//maktime将结构化时间转化为日历时间时，自动将tm结构体中的内容补全。
 //		time = mktime(&date);
 //		cout << Week[date.tm_wday] << endl;
 //	}

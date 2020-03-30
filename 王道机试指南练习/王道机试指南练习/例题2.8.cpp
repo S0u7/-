@@ -19,10 +19,10 @@
 //	{
 //		cin >> y >> m >> d >> later;
 //
-//		sum = accumulate(month, month + 12, 0);
+//		sum = accumulate(month, month + 12, 0);//累加函数
 //		s = accumulate(month, month + m - 1, 0) + d + later;
 //		
-//		while (s > sum)
+//		while (s > sum)//超过一年
 //		{
 //			y++;
 //			m = 1;

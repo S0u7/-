@@ -12,7 +12,7 @@
 //b\d\e
 //*/
 //const int MAX = 11;
-//vector<string> vec[MAX];
+//vector<string> vec[MAX];//vector数组，相当于二维数组
 //
 //int main()
 //{
@@ -36,12 +36,15 @@
 //                }
 //                else
 //                {
+//                    //字符串最后一部分存入vec[i]中
 //                    vec[i].push_back(s.substr(j, s.size() - j));
 //                    break;
 //                }
 //            }
 //        }
-//        sort(vec, vec + n);//技巧
+//        //vector存的是string，可以直接比较
+//        //从左到右比较字母
+//        sort(vec, vec + n);
 //
 //        //打印
 //        for (int i = 0; i < n; i++)
@@ -65,6 +68,7 @@
 //                    else
 //                        break;
 //                }
+//
 //                //第一个字母就不相同，直接输出
 //                if (j == 0)
 //                {
