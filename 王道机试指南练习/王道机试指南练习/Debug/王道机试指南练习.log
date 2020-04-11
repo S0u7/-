@@ -1,2 +1,9 @@
-﻿  习题2.11.cpp
-  王道机试指南练习.vcxproj -> D:\VS项目\code-practice-in-VS\王道机试指南练习\Debug\王道机试指南练习.exe
+﻿  排序算法.cpp
+D:\VS项目\code-practice-in-VS\王道机试指南练习\王道机试指南练习\排序算法.cpp(408,21): error C2131: 表达式的计算结果不是常数
+D:\VS项目\code-practice-in-VS\王道机试指南练习\王道机试指南练习\排序算法.cpp(408,21): message : 因读取超过生命周期的变量而失败
+D:\VS项目\code-practice-in-VS\王道机试指南练习\王道机试指南练习\排序算法.cpp(408,21): message : 请参见“max_val”的用法
+D:\VS项目\code-practice-in-VS\王道机试指南练习\王道机试指南练习\排序算法.cpp(418,4): error C2672: “std::sort”: 未找到匹配的重载函数
+D:\VS项目\code-practice-in-VS\王道机试指南练习\王道机试指南练习\排序算法.cpp(418,43): error C2780: “void std::sort(const _RanIt,const _RanIt)”: 应输入 2 个参数，却提供了 1 个
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\algorithm(3478): message : 参见“std::sort”的声明
+D:\VS项目\code-practice-in-VS\王道机试指南练习\王道机试指南练习\排序算法.cpp(418,43): error C2780: “void std::sort(const _RanIt,const _RanIt,_Pr)”: 应输入 3 个参数，却提供了 1 个
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\algorithm(3470): message : 参见“std::sort”的声明
