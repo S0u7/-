@@ -135,14 +135,15 @@ void Sift(int arr[], int n, int i)//堆排序，筛运算
 }
 void HeapSprt(int arr[], int n)
 {
-	int	temp;
+	//int	temp;
 	for (int i = n / 2 - 1; i >= 0; i--)//建堆
 		Sift(arr, n, i);
 	for (int j = 1; j <= n-1; j++)//利用堆排序
 	{
-		temp = arr[0];//对调arr[0]和arr[n-j]
-		arr[0] = arr[n - j];
-		arr[n - j] = temp;
+		//temp = arr[0];//对调arr[0]和arr[n-j]
+		//arr[0] = arr[n - j];
+		//arr[n - j] = temp;
+		swap(arr[0], arr[n - j]);
 		Sift(arr, n-j, 0);//对arr[0]在前n-j个结点中进行筛运算
 	}
 	arrOutput(arr, n);
@@ -150,7 +151,8 @@ void HeapSprt(int arr[], int n)
 
 void BubbleSort(int arr[], int n)//冒泡排序
 {
-	int temp, flag;
+	//int temp;
+	int flag;
 	for (int i = 0; i < n-1; i++)//n-1轮冒泡
 	{
 		flag = 0;
@@ -158,9 +160,10 @@ void BubbleSort(int arr[], int n)//冒泡排序
 		{
 			if (arr[j] > arr[j+1])
 			{
-				temp = arr[j];
-				arr[j] = arr[j + 1];
-				arr[j + 1] = temp;
+				//temp = arr[j];
+				//arr[j] = arr[j + 1];
+				//arr[j + 1] = temp;
+				swap(arr[j], arr[j + 1]);
 				flag = 1;//置1表示有交换
 			}
 		}
@@ -184,11 +187,12 @@ void QuickSort_A(int arr[], int low, int high)
 			j--;
 		if (i < j)//当条件成立且i和j 没相遇时，交换arr[i]和arr[j]的值
 		{
-			int temp = arr[i];
-			arr[i] = arr[j];
-			arr[j] = temp;
-			i++;
-			j--;
+			//int temp = arr[i];
+			//arr[i] = arr[j];
+			//arr[j] = temp;
+			//i++;
+			//j--;
+			swap(arr[i++], arr[j++]);
 		}
 	}
 	/*为什么与j比较进行判断：
@@ -224,28 +228,43 @@ int partition_B(int arr[], int low, int high)
 {
 	int pivot = arr[low];
 	int i = low;
-	int temp;
+	//int temp;
 	for (int j = low+1; j <= high; j++)
 	{
 		if (arr[j] < pivot)
 		{
-			temp = arr[j];
-			arr[j] = arr[++i];
-			arr[i] = temp;
+			//temp = arr[j];
+			//arr[j] = arr[++i];
+			//arr[i] = temp;
+			swap(arr[j], arr[++i]);
 		}
 	}
-	temp = arr[i];
-	arr[i] = arr[low];
-	arr[low] = temp;
+	//temp = arr[i];
+	//arr[i] = arr[low];
+	//arr[low] = temp;
+	swap(arr[i], arr[low]);
 	return i;
 }
+
+int partition_C(int arr[], int low, int high)
+{
+	while (low < high)
+	{
+		while (low < high && arr[low] <= arr[high])	high--;
+		swap(arr[low], arr[high]);
+		while (low < high && arr[low] <= arr[high])	low++;
+		swap(arr[low], arr[high]);
+	}
+	return low;
+}
+
 void QuickSort_B(int arr[], int low, int high)
 {
 	if (low < high)
 	{
 		//int pivot = partition_A(arr, low, high);
 		int pivot = partition_B(arr, low, high);
-		//arrOutput(arr, high - low + 1);
+		//int pivot = partition_C(arr, low, high);
 		QuickSort_B(arr, low, pivot - 1);
 		QuickSort_B(arr, pivot + 1, high);
 	}
