@@ -149,6 +149,13 @@
     <ClCompile Include="习题2.7.cpp" />
     <ClCompile Include="习题2.8.cpp" />
     <ClCompile Include="习题2.9.cpp" />
+    <ClCompile Include="习题3.1.cpp" />
+    <ClCompile Include="习题3.2.cpp" />
+    <ClCompile Include="习题3.3.cpp" />
+    <ClCompile Include="习题3.4.cpp" />
+    <ClCompile Include="习题3.5.cpp" />
+    <ClCompile Include="习题3.6.cpp" />
+    <ClCompile Include="习题3.7.cpp" />
     <ClCompile Include="例题2.1.cpp" />
     <ClCompile Include="例题2.10.cpp" />
     <ClCompile Include="例题2.11.cpp" />
@@ -160,6 +167,11 @@
     <ClCompile Include="例题2.7.cpp" />
     <ClCompile Include="例题2.8.cpp" />
     <ClCompile Include="例题2.9.cpp" />
+    <ClCompile Include="例题3.1.cpp" />
+    <ClCompile Include="例题3.2.cpp" />
+    <ClCompile Include="例题3.3.cpp" />
+    <ClCompile Include="例题3.4.cpp" />
+    <ClCompile Include="例题3.5.cpp" />
     <ClCompile Include="排序算法.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
