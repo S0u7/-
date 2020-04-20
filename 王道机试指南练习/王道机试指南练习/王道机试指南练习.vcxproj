@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="KMP算法.cpp" />
     <ClCompile Include="习题2.1.cpp" />
     <ClCompile Include="习题2.10.cpp" />
     <ClCompile Include="习题2.11.cpp" />
@@ -156,6 +157,13 @@
     <ClCompile Include="习题3.5.cpp" />
     <ClCompile Include="习题3.6.cpp" />
     <ClCompile Include="习题3.7.cpp" />
+    <ClCompile Include="习题4.1.cpp" />
+    <ClCompile Include="习题4.2.cpp" />
+    <ClCompile Include="习题4.3.cpp" />
+    <ClCompile Include="习题4.4.cpp" />
+    <ClCompile Include="习题4.5.cpp" />
+    <ClCompile Include="习题4.6.cpp" />
+    <ClCompile Include="习题4.7.cpp" />
     <ClCompile Include="例题2.1.cpp" />
     <ClCompile Include="例题2.10.cpp" />
     <ClCompile Include="例题2.11.cpp" />
@@ -172,6 +180,13 @@
     <ClCompile Include="例题3.3.cpp" />
     <ClCompile Include="例题3.4.cpp" />
     <ClCompile Include="例题3.5.cpp" />
+    <ClCompile Include="例题4.1.cpp" />
+    <ClCompile Include="例题4.2.cpp" />
+    <ClCompile Include="例题4.3.cpp" />
+    <ClCompile Include="例题4.4.cpp" />
+    <ClCompile Include="例题4.5.cpp" />
+    <ClCompile Include="例题4.6.cpp" />
+    <ClCompile Include="例题4.7.cpp" />
     <ClCompile Include="排序算法.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
