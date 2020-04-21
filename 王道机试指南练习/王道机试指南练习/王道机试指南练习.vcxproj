@@ -139,6 +139,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="KMP算法.cpp" />
+    <ClCompile Include="中缀表达式求值.cpp" />
     <ClCompile Include="习题2.1.cpp" />
     <ClCompile Include="习题2.10.cpp" />
     <ClCompile Include="习题2.11.cpp" />
@@ -164,6 +165,9 @@
     <ClCompile Include="习题4.5.cpp" />
     <ClCompile Include="习题4.6.cpp" />
     <ClCompile Include="习题4.7.cpp" />
+    <ClCompile Include="习题5.1.cpp" />
+    <ClCompile Include="习题5.2.cpp" />
+    <ClCompile Include="习题5.2_N02.cpp" />
     <ClCompile Include="例题2.1.cpp" />
     <ClCompile Include="例题2.10.cpp" />
     <ClCompile Include="例题2.11.cpp" />
@@ -187,6 +191,13 @@
     <ClCompile Include="例题4.5.cpp" />
     <ClCompile Include="例题4.6.cpp" />
     <ClCompile Include="例题4.7.cpp" />
+    <ClCompile Include="例题5.1.cpp" />
+    <ClCompile Include="例题5.2.cpp" />
+    <ClCompile Include="例题5.3.cpp" />
+    <ClCompile Include="例题5.4.cpp" />
+    <ClCompile Include="例题5.5.cpp" />
+    <ClCompile Include="例题5.6.cpp" />
+    <ClCompile Include="例题5.6_N02.cpp" />
     <ClCompile Include="排序算法.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
